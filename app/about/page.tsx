@@ -11,7 +11,7 @@ const values = [
     icon: Zap,
     title: "Move with speed",
     description:
-      "As a no-code team, we understand we're selling speed and time. So we make it our priority to take steps internally and externally to push things the extra step faster.",
+      "We focus on delivering faster results by streamlining every step of the process. Internally and externally, our priority is to cut delays and push projects forward with efficiency.",
   },
   {
     icon: Target,
@@ -63,7 +63,7 @@ export default function AboutPage() {
               About Us
             </h1>
             <p className="text-xl sm:text-2xl md:text-3xl text-gray-300 max-w-3xl mx-auto">
-              We're a team of passionate developers, designers, and innovators building the future of web technology.
+              Crafting powerful SaaS solutions that transform how businesses operate and grow in the digital age.
             </p>
           </motion.div>
         </div>
@@ -83,7 +83,7 @@ export default function AboutPage() {
               Our Mission: Building Trust and Social Value
             </h2>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8">
-              At FlowCore, we're committed to transforming businesses through innovative digital solutions while
+              At Praevion, we're committed to transforming businesses through innovative digital solutions while
               prioritizing trust, transparency, and social responsibility. Our mission is to create technology that not
               only drives success but also contributes positively to society.
             </p>

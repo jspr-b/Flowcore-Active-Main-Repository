@@ -9,62 +9,62 @@ import Link from "next/link"
 const phases = [
   {
     icon: Lightbulb,
-    title: "AI Strategy & Planning",
-    description: "We start by understanding your business needs and designing a comprehensive AI strategy.",
+    title: "Strategy & Planning",
+    description: "We begin by understanding your business needs and designing a comprehensive SaaS roadmap.",
     details: [
-      "In-depth analysis of your current processes and AI opportunities",
-      "Identification of key areas for AI agent implementation",
-      "Development of a tailored AI roadmap",
-      "ROI projections and success metrics definition",
-      "AI platform evaluation and setup planning",
+      "In-depth analysis of current processes and opportunities",
+      "Identification of key areas for SaaS implementation",
+      "Development of a tailored product plan",
+      "Clear outcome mapping and measurable success criteria",
+      "Platform evaluation and setup planning",
     ],
     gradient: "from-pink-500 to-purple-500",
-    cta: "Start Your AI Journey",
+    cta: "Start Your SaaS Journey",
   },
   {
     icon: Rocket,
-    title: "AI Agent Development",
+    title: "SaaS Development",
     description:
-      "We rapidly develop and deploy your first set of AI agents, focusing on quick wins and core functionalities.",
+      "We rapidly design and deploy your first set of SaaS tools, focusing on quick wins and core functionalities.",
     details: [
-      "Rapid prototyping of AI agents using advanced platforms",
-      "Integration with existing data sources and systems",
-      "Implementation of core AI functionalities",
+      "Rapid prototyping of SaaS solutions",
+      "Integration with existing systems and data sources",
+      "Implementation of core functionalities",
       "User acceptance testing and feedback collection",
-      "Initial training and fine-tuning of AI models",
+      "Iterative refinement for performance and usability",
     ],
     gradient: "from-purple-500 to-blue-500",
-    cta: "Build Your AI Agents",
+    cta: "Build Your SaaS Solution",
   },
   {
     icon: Zap,
     title: "Iteration & Expansion",
     description:
-      "Through agile sprints, we continuously improve your AI agents, expand their capabilities, and roll out to more departments.",
+      "Through agile sprints, we continuously improve your SaaS products, expand their capabilities, and roll out to more departments.",
     details: [
       "Ongoing performance monitoring and optimization",
-      "Regular updates and enhancements to AI agents",
-      "Expansion of AI capabilities to new business areas",
-      "Advanced feature implementation (e.g., predictive analytics)",
-      "Scaling of AI infrastructure as needed",
+      "Regular updates and enhancements",
+      "Expansion to new business areas",
+      "Implementation of advanced features",
+      "Scalable infrastructure to support growth",
     ],
     gradient: "from-blue-500 to-cyan-500",
-    cta: "Enhance Your AI",
+    cta: "Enhance Your SaaS",
   },
   {
     icon: Globe,
-    title: "AI Optimization & Innovation",
+    title: "Optimization & Innovation",
     description:
-      "We focus on maximizing the potential of your AI agents, driving continuous improvement, and exploring innovative applications across your organization.",
+      "We maximize the potential of your SaaS solutions by driving continuous improvement and exploring innovative applications across your organization.",
     details: [
-      "Advanced performance tuning of AI agents",
-      "Exploration of new AI use cases and capabilities",
-      "Integration of AI insights into strategic decision-making",
-      "Establishment of AI governance and best practices",
-      "Continuous learning and adaptation of AI models",
+      "Advanced performance tuning",
+      "Exploration of new features and use cases",
+      "Integration of insights into strategic decision-making",
+      "Establishment of governance and best practices",
+      "Continuous evolution of your SaaS ecosystem",
     ],
     gradient: "from-cyan-500 to-teal-500",
-    cta: "Maximize AI Potential",
+    cta: "Maximize SaaS Potential",
   },
 ]
 
@@ -100,11 +100,11 @@ export default function PhasesSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500">
-            Your AI Agent Journey
+            Your SaaS Journey
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto mt-4">
-            Experience our proven methodology for implementing powerful AI agents, ensuring successful digital
-            transformation through a structured, phase-based approach
+            Experience our structured methodology for delivering powerful SaaS solutions, ensuring successful digital
+            transformation through a clear, phase-based approach
           </p>
         </motion.div>
 
@@ -218,17 +218,17 @@ export default function PhasesSection() {
             />
             <div className="relative z-10">
               <h3 className="text-2xl md:text-3xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500">
-                Ready to Leverage AI and Transform Your Business?
+                Ready to Transform Your Business with SaaS?
               </h3>
               <p className="text-lg text-gray-400 mb-6 max-w-2xl mx-auto">
-                Don't just imagine the future – create it. Our team of AI experts is ready to guide you through each
-                phase of implementing powerful AI agents, revolutionizing your business processes.
+                Don't just adapt to the future—build it. Our team is ready to guide you through every
+                phase of SaaS implementation, revolutionizing how your business operates.
               </p>
               <Button
                 onClick={() => window.open("https://calendly.com/jasperbutter2/30min", "_blank")}
                 className="relative overflow-hidden rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 px-8 py-3 text-lg font-bold text-white transition-transform hover:scale-105"
               >
-                Leverage AI Now
+                Start Now
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>

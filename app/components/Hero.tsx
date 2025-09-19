@@ -81,7 +81,7 @@ export default function Hero() {
                 className="mb-6 text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tighter leading-none relative z-10"
               >
                 <span className="block bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 leading-[1.1]">
-                  FlowCore
+                  Praevion
                 </span>
                 <span className="block bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 leading-[1.1]">
                   Empowers
@@ -95,8 +95,8 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Transforming business operations with effortless workflow automation. From concept to execution, we
-              simplify complex processes so you can focus on growth.
+              Effortless SaaS solutions for modern businesses. We turn your ideas into custom tools, streamlining 
+              operations and accelerating growth.
             </motion.p>
 
             <motion.div

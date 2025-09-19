@@ -7,8 +7,8 @@ import Link from "next/link"
 import { scrollToTop } from "../lib/utils"
 
 const socialLinks = [
-  { name: "Twitter", href: "https://twitter.com/flowcore", icon: Twitter },
-  { name: "LinkedIn", href: "https://linkedin.com/company/flowcore", icon: Linkedin },
+  { name: "Twitter", href: "https://twitter.com/praevion", icon: Twitter },
+  { name: "LinkedIn", href: "https://linkedin.com/company/praevion", icon: Linkedin },
 ]
 
 const sitemapLinks = [
@@ -93,7 +93,7 @@ export default function Footer() {
               />
             </motion.svg>
           </motion.div>
-          <h2 className="text-2xl font-bold text-white mb-1">FlowCore</h2>
+          <h2 className="text-2xl font-bold text-white mb-1">Praevion</h2>
           <div className="flex space-x-4 mb-4">
             {socialLinks.map((link) => (
               <a
@@ -128,7 +128,7 @@ export default function Footer() {
 
         <div className="text-center text-xs">
           <p>
-            &copy; {currentYear} FlowCore. All rights reserved.
+            &copy; {currentYear} Praevion. All rights reserved.
             <span className="mx-2">|</span>
             <Link href="/privacy-policy" className="hover:text-primary cursor-pointer transition-colors duration-200">
               Privacy Policy

@@ -7,34 +7,34 @@ import { Button } from "@/components/ui/button"
 const comparisonData = [
   {
     metric: "Cost Reduction",
-    ai: 80,
-    human: 0,
+    saas: 80,
+    traditional: 0,
     unit: "%",
     description:
-      "AI-driven automation can cut operational costs by up to 80%, eliminating expenses related to salaries, benefits, and human errors.",
+      "SaaS can reduce operational costs by up to 80%, removing expenses tied to manual processes and legacy systems.",
   },
   {
-    metric: "Automation of Repetitive Tasks",
-    ai: 95,
-    human: 0,
-    unit: "%",
-    description:
-      "AI can automate up to 95% of routine tasks, freeing human employees to focus on high-value, strategic initiatives.",
-  },
-  {
-    metric: "Average Response Time",
-    ai: 0.5,
-    human: 10,
+    metric: "Execution Time",
+    saas: 5,
+    traditional: 60,
     unit: "minutes",
-    description: "AI agents respond in seconds, providing near-instantaneous support compared to human response times.",
+    description:
+      "Processes completed with SaaS take minutes instead of hours, accelerating delivery and decision-making.",
   },
   {
-    metric: "Monthly Availability",
-    ai: 100,
-    human: 33,
+    metric: "Operational Availability",
+    saas: 100,
+    traditional: 30,
+    unit: "%",
+    description: "SaaS runs 24/7, offering uninterrupted performance compared to the limits of traditional operations.",
+  },
+  {
+    metric: "Custom Fit",
+    saas: 100,
+    traditional: 20,
     unit: "%",
     description:
-      "AI operates 24/7 without breaks, offering continuous service compared to limited human working hours.",
+      "Every SaaS solution is built around your unique workflows, eliminating one-size-fits-all limitations of traditional tools.",
   },
 ]
 
@@ -50,11 +50,10 @@ const AIPerformanceComparison = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500">
-            AI Agents vs Traditional Operations: The Impact
+            SaaS vs Traditional Operations: The Impact
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            Discover how AI agents can dramatically improve efficiency, reduce costs, and transform your business
-            operations
+            See how custom SaaS products transform efficiency, speed, and scalability for modern businesses
           </p>
         </motion.div>
 
@@ -75,14 +74,14 @@ const AIPerformanceComparison = () => {
                 <div className="flex items-center">
                   <Bot className="w-6 h-6 text-cyan-500 mr-2" />
                   <span className="text-2xl font-bold text-cyan-500">
-                    {item.ai}
+                    {item.saas}
                     {item.unit}
                   </span>
                 </div>
                 <div className="flex items-center">
                   <User className="w-6 h-6 text-yellow-500 mr-2" />
                   <span className="text-2xl font-bold text-yellow-500">
-                    {item.human}
+                    {item.traditional}
                     {item.unit}
                   </span>
                 </div>
@@ -91,7 +90,7 @@ const AIPerformanceComparison = () => {
                 <div className="overflow-hidden h-2 text-xs flex rounded bg-gray-700">
                   <motion.div
                     initial={{ width: 0 }}
-                    whileInView={{ width: `${item.ai}%` }}
+                    whileInView={{ width: `${item.saas}%` }}
                     viewport={{ once: true }}
                     transition={{ duration: 1, delay: 0.5 }}
                     className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-cyan-500"
@@ -110,7 +109,7 @@ const AIPerformanceComparison = () => {
           className="text-center mt-12"
         >
           <p className="text-xl text-gray-300 mb-6">
-            Harness the power of AI to revolutionize your business operations and stay ahead of the competition.
+            Harness the power of custom SaaS solutions to revolutionize your business operations and stay ahead of the competition.
           </p>
           <Button
             onClick={() => window.open("https://calendly.com/jasperbutter2/30min", "_blank")}

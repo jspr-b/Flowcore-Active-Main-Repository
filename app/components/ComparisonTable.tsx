@@ -18,49 +18,49 @@ const comparisonData = [
   {
     aspect: "Development Time",
     traditional: "Months to Years",
-    flowCore: "Weeks to Months",
+    praevion: "Weeks to Months",
     icon: Clock,
   },
   {
-    aspect: "AI Integration",
+    aspect: "System Integration",
     traditional: "Limited or manual integration",
-    flowCore: "Seamless AI-powered automation",
+    praevion: "Seamless workflow integration",
     icon: Zap,
   },
   {
     aspect: "Scalability",
     traditional: "Requires significant effort",
-    flowCore: "Easily scalable with AI agents",
+    praevion: "Easily scalable with modular SaaS",
     icon: ArrowUpRight,
   },
   {
     aspect: "Customization",
     traditional: "Time-consuming and complex",
-    flowCore: "Rapid, AI-assisted customization",
+    praevion: "Rapid, configuration-based setup",
     icon: Settings,
   },
   {
     aspect: "Data Processing",
     traditional: "Manual or basic automation",
-    flowCore: "Advanced AI-driven data analysis",
+    praevion: "Automated, structured data handling",
     icon: Database,
   },
   {
     aspect: "Cost Efficiency",
     traditional: "High initial and ongoing costs",
-    flowCore: "Reduced costs through AI optimization",
+    praevion: "Lower costs through lean development",
     icon: DollarSign,
   },
   {
     aspect: "Workflow Optimization",
     traditional: "Manual process improvements",
-    flowCore: "AI-powered continuous optimization",
+    praevion: "Continuous improvement baked in",
     icon: GitBranch,
   },
   {
     aspect: "Adaptability",
     traditional: "Slow to adapt to changes",
-    flowCore: "Rapid adaptation with AI learning",
+    praevion: "Fast adaptation with flexible modules",
     icon: RefreshCw,
   },
 ]
@@ -75,9 +75,9 @@ export default function ComparisonTable() {
         transition={{ duration: 0.8 }}
         className="text-center mb-16"
       >
-        <h2 className="text-4xl font-bold text-white mb-4">Traditional vs FlowCore AI-Powered Development</h2>
+        <h2 className="text-4xl font-bold text-white mb-4">Traditional vs Praevion SaaS-Powered Development</h2>
         <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-          See how our AI-automated workflow solutions revolutionize the development process compared to traditional
+          See how our streamlined SaaS solutions transform the development process compared to traditional
           approaches
         </p>
       </motion.div>
@@ -89,7 +89,7 @@ export default function ComparisonTable() {
               Traditional Development
             </th>
             <th className="p-2 sm:p-4 text-left text-sm sm:text-base md:text-lg font-semibold text-white">
-              FlowCore Approach
+              Praevion Approach
             </th>
           </tr>
         </thead>
@@ -118,7 +118,7 @@ export default function ComparisonTable() {
               <td className="p-2 sm:p-4 md:p-6 text-sm sm:text-base">
                 <div className="flex items-center">
                   <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 text-green-500" />
-                  <span className="text-gray-300 text-sm sm:text-base">{item.flowCore}</span>
+                  <span className="text-gray-300 text-sm sm:text-base">{item.praevion}</span>
                 </div>
               </td>
             </motion.tr>

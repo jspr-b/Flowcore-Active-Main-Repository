@@ -11,7 +11,7 @@ const benefits = [
   },
   {
     icon: Zap,
-    text: "Explore AI possibilities",
+    text: "Explore SaaS possibilities",
   },
   {
     icon: Lightbulb,
@@ -19,7 +19,7 @@ const benefits = [
   },
 ]
 
-export default function AIWalkthroughSection() {
+export default function StrategyCallSection() {
   return (
     <section className="py-24 bg-gradient-to-b from-[#0a0a0c] to-[#040405] overflow-hidden">
       <div className="container mx-auto px-4">
@@ -39,10 +39,10 @@ export default function AIWalkthroughSection() {
           <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between">
             <div className="lg:w-2/3 mb-8 lg:mb-0">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                Experience a Personalized AI Walkthrough for Your Business
+                Experience a Personalized Walkthrough for Your Business
               </h2>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                Apply for our complimentary, tailored AI walkthrough and see how it can revolutionize your company.
+                Apply for our complimentary, tailored session and see how effortless SaaS can transform your company.
               </p>
 
               <div className="flex flex-wrap gap-4 mb-8">

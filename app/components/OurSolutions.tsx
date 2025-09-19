@@ -2,186 +2,124 @@
 
 import { useState, useEffect, useRef } from "react"
 import { motion } from "framer-motion"
-import { Globe, Users, BarChart2, FileText, Calendar, Activity, Code, Database, ArrowRight, Check } from "lucide-react"
+import { Settings, Globe, User, Smartphone, Briefcase, BarChart2, ArrowRight, Check } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 const services = [
   {
-    icon: Users,
-    title: "Lead Background Research Agent",
-    description:
-      "Automate lead research by gathering comprehensive background information from multiple online sources.",
+    icon: Settings,
+    title: "Internal Tools",
+    description: "Custom internal tools to automate processes and support team operations.",
     color: "from-pink-500 to-purple-500",
     features: [
-      "Automated data extraction from websites and social media",
-      "AI-powered analysis of company and individual profiles",
-      "Contact information enrichment",
-      "Industry insights and competitor comparisons",
+      "Form and workflow builders",
+      "Role-based access control",
+      "Data dashboards and reporting",
+      "Integrations with existing systems",
     ],
     benefits: [
-      "Save hours of manual research",
-      "Improve lead qualification and targeting",
-      "Boost sales efficiency",
-      "Get real-time updates on potential clients",
+      "Cut down on repetitive manual work",
+      "Empower teams to work faster",
+      "Improve process visibility",
+      "Centralize operations in one place",
     ],
-    successMetric:
-      "Companies using AI-powered lead research have seen 30% higher conversion rates by targeting well-qualified prospects.",
+    successMetric: "Companies using internal tools reduce manual workload by 40%.",
   },
   {
     icon: Globe,
-    title: "YouTube to SEO Blog Converter",
-    description: "Repurpose YouTube content into SEO-optimized blog posts to expand your digital presence.",
+    title: "Website",
+    description: "Quickly design and launch modern, responsive websites.",
     color: "from-purple-500 to-blue-500",
     features: [
-      "AI-based transcription and summarization",
-      "Keyword optimization for search engines",
-      "Blog formatting and structure generation",
-      "Multi-language support",
+      "Drag-and-drop editor",
+      "SEO-ready templates",
+      "Responsive design by default",
+      "Content management system",
     ],
     benefits: [
-      "Maximize content reach with minimal effort",
-      "Improve SEO rankings and website traffic",
-      "Save content creation costs",
-      "Maintain brand consistency across platforms",
+      "Launch websites faster",
+      "Save development costs",
+      "Improve online discoverability",
+      "Ensure mobile-friendly experiences",
     ],
-    successMetric:
-      "Companies using content repurposing see a 47% increase in organic traffic and improved search rankings.",
+    successMetric: "Websites built with fast editors launch 3x quicker than traditional builds.",
+  },
+  {
+    icon: User,
+    title: "Personal",
+    description: "Tools for organizing personal projects, tasks, and ideas.",
+    color: "from-blue-500 to-cyan-500",
+    features: [
+      "To-do lists with reminders",
+      "Note-taking with sync",
+      "Calendar and event tracking",
+      "Private workspace mode",
+    ],
+    benefits: [
+      "Stay on top of personal goals",
+      "Reduce missed deadlines",
+      "Keep projects organized",
+      "Balance work and life tasks",
+    ],
+    successMetric: "Users save 5+ hours weekly with centralized personal management.",
+  },
+  {
+    icon: Smartphone,
+    title: "Consumer App",
+    description: "Applications designed for end users with smooth and simple UX.",
+    color: "from-cyan-500 to-teal-500",
+    features: [
+      "User account management",
+      "Push notifications",
+      "Mobile-first layouts",
+      "In-app purchases or payments",
+    ],
+    benefits: [
+      "Reach wide consumer audiences",
+      "Improve engagement and retention",
+      "Open new revenue channels",
+      "Deliver intuitive user experiences",
+    ],
+    successMetric: "Consumer apps raise daily active users by 35% after launch.",
+  },
+  {
+    icon: Briefcase,
+    title: "B2B App",
+    description: "Business-focused applications that streamline workflows between companies.",
+    color: "from-teal-500 to-green-500",
+    features: [
+      "Multi-user access and team roles",
+      "Data sharing between organizations",
+      "Customizable dashboards",
+      "Integrations with business platforms",
+    ],
+    benefits: [
+      "Strengthen B2B collaboration",
+      "Automate critical workflows",
+      "Generate better business insights",
+      "Scale operations efficiently",
+    ],
+    successMetric: "B2B apps reduce operational costs by 25% on average.",
   },
   {
     icon: BarChart2,
-    title: "Automated Invoice and Expense Classification Agent",
-    description: "Eliminate manual data entry with AI-driven invoice processing and expense categorization.",
-    color: "from-blue-500 to-cyan-500",
-    features: [
-      "AI-powered text recognition and data extraction",
-      "Automatic expense classification",
-      "Integration with accounting software",
-      "Fraud detection and anomaly alerts",
-    ],
-    benefits: [
-      "Reduce human error in financial operations",
-      "Streamline bookkeeping and reporting",
-      "Save time on manual data entry",
-      "Improve compliance and audit readiness",
-    ],
-    successMetric: "Businesses automating invoice management reduce financial errors by 95% and cut admin time by 80%.",
-  },
-  {
-    icon: Calendar,
-    title: "Proactive Meeting Prep Assistant",
-    description:
-      "AI-powered meeting prep tool that automatically summarizes documents and key points before your meetings.",
-    color: "from-cyan-500 to-teal-500",
-    features: [
-      "Automatic agenda creation based on past discussions",
-      "AI-generated meeting summaries",
-      "Key takeaways and action items extraction",
-      "Integration with calendar and email systems",
-    ],
-    benefits: [
-      "Ensure every meeting is productive",
-      "Eliminate manual note-taking and follow-ups",
-      "Keep teams aligned with summarized insights",
-      "Reduce meeting prep time significantly",
-    ],
-    successMetric: "Organizations using AI-powered meeting prep save up to 30% of meeting time, boosting productivity.",
-  },
-  {
-    icon: Code,
-    title: "GitHub PR Description Inserter",
-    description: "Automate pull request documentation by generating structured PR descriptions.",
-    color: "from-teal-500 to-green-500",
-    features: [
-      "Automatic change log summarization",
-      "AI-generated descriptions for PRs",
-      "Custom formatting and tagging",
-      "Integration with GitHub workflows",
-    ],
-    benefits: [
-      "Improve code review efficiency",
-      "Maintain consistent documentation",
-      "Reduce developer workload",
-      "Speed up deployment cycles",
-    ],
-    successMetric: "Teams using AI-driven PR documentation reduce review times by 40% and improve collaboration.",
-  },
-  {
-    icon: FileText,
-    title: "Multi-Article Summarizer",
-    description: "AI-powered summarization tool that extracts key insights from multiple articles in seconds.",
+    title: "Dashboard",
+    description: "Visualize business data and track performance in real time.",
     color: "from-green-500 to-yellow-500",
     features: [
-      "AI-driven text analysis and summarization",
-      "Key takeaway extraction",
-      "Multi-source aggregation",
-      "Export to reports and presentations",
+      "Customizable charts and graphs",
+      "KPI and metric tracking",
+      "Live data connections",
+      "Export to PDF or CSV",
     ],
     benefits: [
-      "Get insights faster without manual reading",
-      "Improve decision-making with concise reports",
-      "Stay updated on industry trends effortlessly",
-      "Reduce information overload",
+      "Make informed decisions faster",
+      "Spot trends instantly",
+      "Improve accountability across teams",
+      "Centralize performance insights",
     ],
-    successMetric: "Companies using automated summarization save 5+ hours per week on research and reporting.",
-  },
-  {
-    icon: Users,
-    title: "Hiring Candidate Ranking System",
-    description: "AI-driven recruitment tool that ranks candidates based on skills, experience, and job fit.",
-    color: "from-yellow-500 to-orange-500",
-    features: [
-      "Resume parsing and keyword analysis",
-      "AI-driven ranking system based on job fit",
-      "Customizable candidate scoring criteria",
-      "Integration with ATS and HR systems",
-    ],
-    benefits: [
-      "Identify top candidates instantly",
-      "Reduce bias in hiring decisions",
-      "Speed up recruitment processes",
-      "Improve hiring accuracy and efficiency",
-    ],
-    successMetric: "Companies using AI for hiring reduce time-to-hire by 50% and improve employee retention.",
-  },
-  {
-    icon: Activity,
-    title: "Daily Stock Report Generator",
-    description: "Generate AI-powered stock reports with real-time financial trends and insights.",
-    color: "from-orange-500 to-red-500",
-    features: [
-      "AI-driven trend analysis and market insights",
-      "One-page PDF stock reports",
-      "Customizable ticker selection",
-      "Automated daily report scheduling",
-    ],
-    benefits: [
-      "Stay ahead with real-time market insights",
-      "Save hours on financial research",
-      "Improve investment decision-making",
-      "Automate stock tracking effortlessly",
-    ],
-    successMetric: "Investors using AI-driven stock analysis reduce research time by 80% while improving accuracy.",
-  },
-  {
-    icon: Database,
-    title: "Web Scraping and Data Extraction Agent",
-    description: "AI-driven web scraper that extracts structured data from any website for business intelligence.",
-    color: "from-red-500 to-pink-500",
-    features: [
-      "AI-powered data extraction from web pages",
-      "Customizable scraping rules",
-      "Export data to Excel, databases, or APIs",
-      "Continuous monitoring and alerts",
-    ],
-    benefits: [
-      "Automate data collection for market research",
-      "Gain real-time insights on competitors",
-      "Save time on manual web research",
-      "Improve business intelligence strategies",
-    ],
-    successMetric:
-      "Companies using AI for data extraction reduce manual research time by 90% and gain competitive insights faster.",
+    successMetric: "Dashboards improve reporting efficiency by 65%.",
   },
 ]
 
@@ -212,11 +150,11 @@ export default function OurSolutions() {
         >
           <Link href="/solutions" className="inline-block group">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter text-white transition-all duration-300 group-hover:scale-105">
-              Our AI Solutions
+              Our SaaS Solutions
             </h2>
           </Link>
           <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
-            Explore some ideas of what we can do: Empowering your business with cutting-edge AI solutions tailored to
+            Explore some ideas of what we can do: Empowering your business with custom SaaS solutions tailored to
             your unique needs
           </p>
         </motion.div>

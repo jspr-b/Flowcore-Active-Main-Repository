@@ -12,7 +12,7 @@ import type React from "react"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "FlowCore",
+  title: "Praevion",
   description: "Your professional coding agency",
   icons: {
     icon: "/logo.svg",

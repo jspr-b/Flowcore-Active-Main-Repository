@@ -87,7 +87,7 @@ export default function Header() {
                 strokeLinejoin="round"
               />
             </svg>
-            <span className="text-xl font-bold whitespace-nowrap">FlowCore</span>
+            <span className="text-xl font-bold whitespace-nowrap">Praevion</span>
           </Link>
 
           {/* Desktop Navigation */}

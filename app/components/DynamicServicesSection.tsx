@@ -8,50 +8,46 @@ import { Code, Palette, Rocket, Zap, ArrowRight } from "lucide-react"
 const services = [
   {
     icon: Code,
-    title: "AI Agent Development",
-    description: "Build powerful internal AI agents for your company.",
+    title: "SaaS Development",
+    description: "Create powerful internal SaaS solutions tailored to your workflows.",
     details: [
-      "Custom AI agent creation",
+      "Custom tool creation",
       "Integration with existing systems",
-      "Natural language processing",
-      "Task automation",
-      "Scalable AI solutions",
+      "Process automation",
+      "Scalable solutions",
     ],
   },
   {
     icon: Palette,
-    title: "AI Agent Design",
-    description: "Design intuitive and efficient AI agents that enhance your company's productivity.",
+    title: "SaaS Design",
+    description: "Design intuitive and efficient products that boost productivity.",
     details: [
-      "User-centered AI design",
-      "Conversational UI/UX",
-      "AI agent behavior modeling",
-      "Interaction flow optimization",
+      "User-focused design",
+      "Clear and simple UI/UX",
+      "Workflow and process modeling",
       "Continuous improvement strategies",
     ],
   },
   {
     icon: Rocket,
-    title: "AI Process Automation",
-    description: "Streamline your business operations with AI-powered process automation.",
+    title: "Process Automation",
+    description: "Simplify operations with seamless automation.",
     details: [
       "Workflow analysis and optimization",
-      "AI-driven decision making",
-      "Intelligent data processing",
-      "Automated reporting and insights",
-      "Cross-department AI integration",
+      "Data processing and reporting",
+      "Task automation",
+      "Cross-department integration",
     ],
   },
   {
     icon: Zap,
-    title: "AI Integration",
-    description: "Seamlessly integrate AI agents into your existing infrastructure.",
+    title: "System Integration",
+    description: "Connect new SaaS products to your existing infrastructure.",
     details: [
-      "AI platform setup",
+      "Platform setup",
       "Custom API development",
       "Data security and compliance",
-      "Performance monitoring",
-      "Continuous AI agent training",
+      "Performance monitoring and iteration",
     ],
   },
 ]
@@ -106,10 +102,10 @@ export default function DynamicServicesSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500">
-            Internal AI Agents for Your Business
+            Internal SaaS Solutions for Your Business
           </h2>
           <p className="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto">
-            Empower your company with cutting-edge AI agents built on advanced platforms.
+            Empower your company with custom-built SaaS tools designed to streamline operations and drive growth.
           </p>
         </motion.div>
 

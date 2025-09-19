@@ -58,13 +58,13 @@ export default function CTASection() {
                 <span className="block bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500">
                   Transform Your Business
                 </span>
-                <span className="block text-white mt-2">with AI Agents</span>
+                <span className="block text-white mt-2">with Custom SaaS</span>
               </h2>
             </div>
 
             <div>
               <p className="text-xl sm:text-2xl text-gray-400 max-w-2xl mx-auto mt-6">
-                Harness the power of AI to automate tasks, reduce costs, and drive innovation in your organization
+                Harness the power of tailored SaaS solutions to streamline operations, cut costs, and fuel growth
               </p>
             </div>
 
@@ -99,7 +99,7 @@ export default function CTASection() {
                   size="lg"
                   className="relative flex items-center gap-2 px-8 py-6 text-lg border-2 border-purple-500 text-white hover:bg-purple-500/20"
                 >
-                  <span>Explore AI Solutions</span>
+                  <span>Explore SaaS Solutions</span>
                   <Rocket className="w-5 h-5" />
                 </Button>
               </Link>
@@ -130,8 +130,7 @@ export default function CTASection() {
               className="text-center mt-12"
             >
               <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-                Join the AI revolution and stay ahead of the competition. Our AI agents are ready to transform your
-                business operations and drive unprecedented growth.
+                Stay ahead with modern SaaS built around your business. Our solutions simplify complexity and unlock new levels of efficiency.
               </p>
             </motion.div>
           </motion.div>

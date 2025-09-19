@@ -22,7 +22,7 @@ export default function PrivacyPolicy() {
           className="space-y-6 text-gray-300"
         >
           <p>
-            FlowCore, hereinafter referred to as "the Company," in its capacity as a purveyor of digital services,
+            Praevion, hereinafter referred to as "the Company," in its capacity as a purveyor of digital services,
             hereby promulgates this Privacy Policy to elucidate the methodologies, protocols, and practices employed in
             the collection, utilization, dissemination, and safeguarding of personal data pertaining to users of our
             digital platforms and services.
@@ -127,7 +127,7 @@ export default function PrivacyPolicy() {
           </ul>
           <p>
             To exercise these rights, users are directed to communicate with our designated privacy officer at
-            privacy@flowcore.com.
+            privacy@praevion.com.
           </p>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">7. Cookies and Tracking Technologies</h2>
@@ -166,7 +166,7 @@ export default function PrivacyPolicy() {
             For any inquiries, concerns, or clarifications regarding this Privacy Policy or our data handling practices,
             please direct your communication to:
           </p>
-          <p className="mt-2">Electronic mail: privacy@flowcore.com</p>
+          <p className="mt-2">Electronic mail: privacy@praevion.com</p>
 
           <p className="mt-8 text-sm text-gray-400">Last updated: {new Date().toLocaleDateString()}</p>
 
