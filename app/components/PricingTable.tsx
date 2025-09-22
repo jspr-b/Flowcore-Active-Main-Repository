@@ -66,7 +66,7 @@ export default function PricingTable() {
               className="flex"
             >
               <div
-                className={`relative overflow-hidden rounded-3xl bg-gradient-to-br from-secondary/20 to-secondary/10 p-10 h-full flex flex-col backdrop-blur-sm border transition-all duration-500 group hover:shadow-2xl hover:scale-105 ${pkg.popular ? "border-purple-500/50 shadow-xl" : "border-gray-800"}`}
+                className={`relative overflow-hidden rounded-3xl bg-gradient-to-br from-secondary/20 to-secondary/10 p-6 sm:p-8 md:p-10 h-full flex flex-col backdrop-blur-sm border transition-all duration-500 group hover:shadow-2xl hover:scale-105 ${pkg.popular ? "border-purple-500/50 shadow-xl" : "border-gray-800"}`}
               >
                 {/* Animated background effect */}
                 <div className="absolute inset-0 opacity-30">
@@ -85,9 +85,10 @@ export default function PricingTable() {
                 </div>
                 
                 {pkg.popular && (
-                  <div className="absolute top-4 right-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white py-2 px-6 rounded-full font-bold text-sm flex items-center gap-2 shadow-lg">
-                    <Sparkles className="w-4 h-4" />
-                    Trusted Solution
+                  <div className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white py-1 px-3 sm:py-2 sm:px-6 rounded-full font-bold text-xs sm:text-sm flex items-center gap-1 sm:gap-2 shadow-lg">
+                    <Sparkles className="w-3 h-3 sm:w-4 sm:h-4" />
+                    <span className="hidden sm:inline">Trusted Solution</span>
+                    <span className="sm:hidden">Trusted</span>
                   </div>
                 )}
                 <div
@@ -96,7 +97,7 @@ export default function PricingTable() {
                     backgroundImage: `linear-gradient(to bottom right, ${pkg.color.split(" ")[1]}, ${pkg.color.split(" ")[3]})`,
                   }}
                 />
-                <div className="relative z-10 text-center">
+                <div className="relative z-10 text-center pt-8 sm:pt-0">
                   <div
                     className={`inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-r ${pkg.color} mb-8 mx-auto`}
                   >
