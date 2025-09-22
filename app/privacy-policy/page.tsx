@@ -33,7 +33,7 @@ export default function PrivacyPolicy() {
 
           <div className="bg-gray-900 p-4 rounded-lg mb-6">
             <p className="text-sm">
-              <strong>Last Updated:</strong> {new Date().toLocaleDateString()}<br />
+              <strong>Last Updated:</strong> {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}<br />
               <strong>Company:</strong> Praevion B.V.<br />
               <strong>Location:</strong> Amsterdam, Netherlands<br />
               <strong>Contact:</strong> privacy@praevion.com<br />
