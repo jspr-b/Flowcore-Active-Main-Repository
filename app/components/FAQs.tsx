@@ -6,29 +6,29 @@ import { X } from "lucide-react"
 
 const faqs = [
   {
-    question: "How does AI automation differ from traditional automation?",
+    question: "How does custom SaaS differ from off-the-shelf software?",
     answer:
-      "AI automation goes beyond traditional rule-based automation by using machine learning and natural language processing. This allows for more complex decision-making, pattern recognition, and the ability to handle unstructured data. Unlike traditional automation, AI can adapt and improve over time, making it ideal for tasks that require contextual understanding or that deal with varying inputs.",
+      "Custom SaaS solutions are built specifically for your unique business processes and workflows, unlike generic software that requires you to adapt your operations to fit the tool. This means better efficiency, easier adoption by your team, and the ability to scale features as your business grows. You get exactly what you need without paying for unnecessary features or dealing with workarounds.",
   },
   {
-    question: "What ROI can we expect from implementing your AI solutions?",
+    question: "What is the typical development timeline for a custom SaaS solution?",
     answer:
-      "ROI varies depending on the specific workflows automated and the scale of implementation. However, our clients typically see a 30-50% reduction in operational costs for automated processes, 40-60% improvement in efficiency, and 20-30% increase in accuracy. For example, a mid-sized company automating customer support with our AI saw a 45% reduction in response times and a 35% increase in customer satisfaction scores within the first six months.",
+      "Development timelines vary based on project complexity and scope. Simple tools with basic functionality can be delivered in 2-4 weeks, while more comprehensive solutions typically take 6-12 weeks. We follow an agile approach, delivering working features incrementally so you can start seeing value early in the process rather than waiting for a complete solution.",
   },
   {
-    question: "How do you handle potential AI errors or biases?",
+    question: "How do you ensure data security and privacy?",
     answer:
-      "We take a proactive approach to mitigate AI errors and biases. This includes diverse training data, regular bias audits, and human oversight. We implement feedback loops to continuously improve our AI models. For critical processes, we often employ a 'human-in-the-loop' approach, where AI suggestions are reviewed by human experts before final decisions are made. We also provide transparent reporting on AI performance and any identified biases.",
+      "Security is built into every layer of our development process. We implement industry-standard encryption, secure authentication protocols, and regular security audits. Your data remains under your control with clear access permissions and audit trails. We also ensure compliance with relevant data protection regulations and can accommodate specific security requirements your business may have.",
   },
   {
-    question: "Can your AI solutions handle multi-language support?",
+    question: "Can the SaaS solution integrate with our existing tools?",
     answer:
-      "Yes, our AI solutions are designed with multi-language support in mind. We use advanced natural language processing models that can be trained on multiple languages. This allows for seamless communication and data processing across different languages. For instance, our customer support AI can handle queries in over 50 languages, while our document processing AI can extract information from documents in 30+ languages.",
+      "Yes, integration capabilities are a core feature of our custom SaaS solutions. We can connect with popular business tools through APIs, webhooks, and custom connectors. Whether you use CRM systems, accounting software, or other specialized tools, we design your SaaS solution to work seamlessly within your existing tech ecosystem, eliminating data silos and manual transfers.",
   },
   {
-    question: "How long does it take to implement an AI workflow?",
+    question: "What kind of ongoing support and maintenance do you provide?",
     answer:
-      "The implementation time varies depending on the complexity of the workflow and the level of customization required. Typically, our Starter Plan workflows can be set up within 1-2 weeks, while more complex Enterprise-level solutions might take 4-8 weeks. We work closely with your team to ensure a smooth and efficient implementation process.",
+      "We provide comprehensive support including regular updates, performance monitoring, and issue resolution. Our maintenance packages include feature enhancements based on your feedback, security patches, and system optimization. We also offer training for your team and documentation to ensure smooth operations. Support levels can be customized based on your needs, from basic maintenance to 24/7 priority support.",
   },
 ]
 
@@ -45,9 +45,9 @@ export default function FAQs() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-white mb-4">Frequently Asked Questions About Our AI Automation</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Frequently Asked Questions</h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Get answers to common questions about our AI-powered workflow automation solutions and how they can
+            Get answers to common questions about our custom SaaS development process and how we can help
             transform your business operations.
           </p>
         </motion.div>

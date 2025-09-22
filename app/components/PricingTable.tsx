@@ -1,88 +1,33 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Check, X, ChevronRight, Zap, Rocket, Cpu, Building } from "lucide-react"
+import { Check, ChevronRight, Rocket, Star, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const packages = [
   {
-    name: "Starter Plan",
-    price: "$597",
-    period: "per month",
-    description: "2-3 AI workflows automated",
+    name: "Custom SaaS Solutions",
+    price: "Tailored Pricing",
+    period: "Built for Your Success",
+    description: "Transform your business with a custom SaaS solution designed exclusively for your unique workflows and goals",
     features: [
-      { name: "Custom AI Workflow Setup", included: true },
-      { name: "Automated Reporting & Insights", included: true },
-      { name: "Priority Support", included: false },
-      { name: "Advanced AI Logic", included: false },
-      { name: "Dedicated Slack Support", included: false },
-      { name: "Unlimited AI Workflows", included: false },
-      { name: "Estimated ROI", value: "$3,000-$5,000+ saved monthly" },
+      { name: "Custom SaaS Development", included: true, highlight: "From idea to launch" },
+      { name: "Full System Integration", included: true, highlight: "Seamless connections" },
+      { name: "Scalable Architecture", included: true, highlight: "Grow without limits" },
+      { name: "24/7 Support & Maintenance", included: true, highlight: "Always there for you" },
+      { name: "User Training & Documentation", included: true, highlight: "Easy onboarding" },
+      { name: "Regular Updates & Enhancements", included: true, highlight: "Continuous improvement" },
     ],
-    color: "from-pink-500 to-purple-500",
-    popular: false,
-    icons: {
-      primary: Zap,
-    },
-  },
-  {
-    name: "Growth Plan",
-    price: "$1,297",
-    period: "per month",
-    description: "5-7 AI workflows automated + priority support",
-    features: [
-      { name: "Custom AI Workflow Setup", included: true },
-      { name: "Automated Reporting & Insights", included: true },
-      { name: "Priority Support", included: true },
-      { name: "Advanced AI Logic", included: true },
-      { name: "Dedicated Slack Support", included: false },
-      { name: "Unlimited AI Workflows", included: false },
-      { name: "Estimated ROI", value: "$7,500-$15,000+ saved monthly" },
+    benefits: [
+      "Streamline your daily workflows",
+      "Optimize operational efficiency",
+      "Fast development timeline",
+      "Completely tailored to your business"
     ],
-    color: "from-purple-500 to-blue-500",
+    color: "from-purple-500 via-pink-500 to-blue-500",
     popular: true,
     icons: {
       primary: Rocket,
-    },
-  },
-  {
-    name: "Scale Plan",
-    price: "$2,497",
-    period: "per month",
-    description: "10+ AI workflows automated + advanced AI logic",
-    features: [
-      { name: "Custom AI Workflow Setup", included: true },
-      { name: "Automated Reporting & Insights", included: true },
-      { name: "Priority Support", included: true },
-      { name: "Advanced AI Logic", included: true },
-      { name: "Dedicated Slack Support", included: true },
-      { name: "Unlimited AI Workflows", included: false },
-      { name: "Estimated ROI", value: "$15,000-$30,000+ saved monthly" },
-    ],
-    color: "from-blue-500 to-cyan-500",
-    popular: false,
-    icons: {
-      primary: Cpu,
-    },
-  },
-  {
-    name: "Enterprise AI",
-    price: "Custom Quote",
-    period: "Contact Us",
-    description: "Unlimited AI workflows—automate everything from sales, customer support, HR, and more",
-    features: [
-      { name: "Custom AI Workflow Setup", included: true },
-      { name: "Automated Reporting & Insights", included: true },
-      { name: "Priority Support", included: true },
-      { name: "Advanced AI Logic", included: true },
-      { name: "Dedicated Slack Support", included: true },
-      { name: "Unlimited AI Workflows", included: true },
-      { name: "Estimated ROI", value: "$50,000+ ROI monthly" },
-    ],
-    color: "from-cyan-500 to-teal-500",
-    popular: false,
-    icons: {
-      primary: Building,
     },
   },
 ]
@@ -98,9 +43,9 @@ export default function PricingTable() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Choose Your AI Automation Plan</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Flexible Pricing for Your Needs</h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Eliminate repetitive tasks, scale your operations, and boost your ROI with our AI-powered solutions.
+            Every business is unique. We create custom pricing based on your specific requirements and goals.
           </p>
         </motion.div>
 
@@ -109,7 +54,7 @@ export default function PricingTable() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="max-w-2xl mx-auto"
         >
           {packages.map((pkg, index) => (
             <motion.div
@@ -121,11 +66,28 @@ export default function PricingTable() {
               className="flex"
             >
               <div
-                className={`relative overflow-hidden rounded-2xl bg-secondary/10 p-8 h-full flex flex-col backdrop-blur-sm border-2 transition-all duration-300 group hover:border-gray-700 hover:bg-secondary/20 ${pkg.popular ? "border-blue-500 scale-105" : "border-gray-800"}`}
+                className={`relative overflow-hidden rounded-3xl bg-gradient-to-br from-secondary/20 to-secondary/10 p-10 h-full flex flex-col backdrop-blur-sm border transition-all duration-500 group hover:shadow-2xl hover:scale-105 ${pkg.popular ? "border-purple-500/50 shadow-xl" : "border-gray-800"}`}
               >
+                {/* Animated background effect */}
+                <div className="absolute inset-0 opacity-30">
+                  <motion.div
+                    className="absolute inset-0 bg-gradient-to-br from-purple-600/20 via-pink-600/20 to-blue-600/20"
+                    animate={{
+                      backgroundPosition: ["0% 0%", "100% 100%", "0% 0%"],
+                    }}
+                    transition={{
+                      duration: 15,
+                      repeat: Infinity,
+                      ease: "linear"
+                    }}
+                    style={{ backgroundSize: "200% 200%" }}
+                  />
+                </div>
+                
                 {pkg.popular && (
-                  <div className="absolute top-0 right-0 bg-blue-500 text-white py-1 px-4 rounded-bl-lg font-semibold text-sm">
-                    Most Popular
+                  <div className="absolute top-4 right-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white py-2 px-6 rounded-full font-bold text-sm flex items-center gap-2 shadow-lg">
+                    <Sparkles className="w-4 h-4" />
+                    Trusted Solution
                   </div>
                 )}
                 <div
@@ -134,54 +96,73 @@ export default function PricingTable() {
                     backgroundImage: `linear-gradient(to bottom right, ${pkg.color.split(" ")[1]}, ${pkg.color.split(" ")[3]})`,
                   }}
                 />
-                <div className="relative z-10">
+                <div className="relative z-10 text-center">
                   <div
-                    className={`inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-r ${pkg.color} mb-6`}
+                    className={`inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-r ${pkg.color} mb-8 mx-auto`}
                   >
-                    <pkg.icons.primary className="h-6 w-6 text-white" />
+                    <pkg.icons.primary className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-3xl font-bold text-white mb-2">{pkg.name}</h3>
-                  <div className="mb-4 flex flex-col items-start">
-                    <div className="text-3xl sm:text-4xl font-bold text-white flex items-end">{pkg.price}</div>
-                    <div className="text-sm sm:text-base text-gray-400">{pkg.period}</div>
+                  <h3 className="text-4xl font-bold text-white mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">{pkg.name}</h3>
+                  <div className="mb-6 text-center">
+                    <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">{pkg.price}</div>
+                    <div className="text-sm sm:text-base text-gray-300 font-medium">{pkg.period}</div>
                   </div>
-                  <p className="text-gray-300 mb-6 text-lg">{pkg.description}</p>
-                  <div className="space-y-4 mb-8">
+                  <p className="text-gray-200 mb-8 text-lg leading-relaxed text-center">{pkg.description}</p>
+                  <div className="space-y-4 mb-8 max-w-md mx-auto">
                     {pkg.features.map((feature, featureIndex) => (
                       <motion.div
                         key={featureIndex}
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.3, delay: featureIndex * 0.1 }}
-                        className="flex items-start"
                       >
-                        {feature.value ? (
-                          <div className="flex items-center">
-                            <span className="text-gray-300">{feature.name}:</span>
-                            <span className="ml-2 text-white font-semibold">{feature.value}</span>
-                          </div>
-                        ) : (
-                          <>
-                            {feature.included ? (
-                              <Check className="h-5 w-5 mr-3 text-green-500 flex-shrink-0 mt-1" />
-                            ) : (
-                              <X className="h-5 w-5 mr-3 text-red-500 flex-shrink-0 mt-1" />
+                        {feature.included && (
+                          <div className="text-center">
+                            <div className="flex items-center justify-center mb-2">
+                              <Check className="h-5 w-5 mr-2 text-green-400 flex-shrink-0" />
+                              <span className="text-gray-200 font-medium">{feature.name}</span>
+                            </div>
+                            {feature.highlight && (
+                              <span className="block text-sm text-gray-400">{feature.highlight}</span>
                             )}
-                            <span className="text-gray-300">{feature.name}</span>
-                          </>
+                          </div>
                         )}
                       </motion.div>
                     ))}
                   </div>
+                  
+                  {/* Benefits section */}
+                  {pkg.benefits && (
+                    <div className="mt-8 p-6 bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-2xl border border-purple-500/20">
+                      <h4 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                        <Star className="w-5 h-5 text-yellow-400" />
+                        Why Choose Us
+                      </h4>
+                      <ul className="space-y-2">
+                        {pkg.benefits.map((benefit, i) => (
+                          <li key={i} className="flex items-center text-gray-300">
+                            <Check className="h-4 w-4 text-purple-400 mr-3 flex-shrink-0" />
+                            {benefit}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
-                <div className="mt-auto relative z-10">
+                <div className="mt-8 relative z-10 flex justify-center">
                   <Button
                     onClick={() => window.open("https://calendly.com/jasperbutter2/30min", "_blank")}
-                    className="w-full text-white font-semibold py-3 px-6 rounded-full text-lg transition-all duration-300 hover:shadow-lg flex items-center justify-center"
+                    className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-4 px-12 rounded-full text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 inline-flex items-center justify-center group"
                   >
-                    {pkg.price === "Custom Quote" ? "Contact Sales" : "Get Started"}
-                    <ChevronRight className="ml-2 h-5 w-5" />
+                    Get Your Custom Proposal
+                    <motion.span
+                      className="ml-2"
+                      animate={{ x: [0, 5, 0] }}
+                      transition={{ duration: 1.5, repeat: Infinity }}
+                    >
+                      <ChevronRight className="h-5 w-5" />
+                    </motion.span>
                   </Button>
                 </div>
                 <motion.div
@@ -210,8 +191,7 @@ export default function PricingTable() {
           className="text-center mt-12 text-gray-400 max-w-3xl mx-auto"
         >
           <p className="text-sm">
-            * All prices are exclusive of VAT. Costs for third-party services such as ChatGPT accounts and other
-            necessary software are the responsibility of the customer and are not included in the package prices.
+            Contact us to discuss your project requirements and receive a customized proposal tailored to your business needs.
           </p>
         </motion.div>
       </div>
